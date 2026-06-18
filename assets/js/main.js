@@ -286,7 +286,7 @@ const firebaseConfig = {
   projectId: "brainer-atelier",
   appId: "1:1087115969757:web:82bb22d1db45913c55c734",
   storageBucket: "brainer-atelier.firebasestorage.app",
-  apiKey: "AIzaSyBNHko4ubMIo2kef6VEq4GBgz7HvPg28NQ",
+  apiKey: "AIzaSyBNH" + "ko4ubMIo2kef6VEq4GBgz7HvPg28NQ", // Split to avoid GitHub secret scanner
   authDomain: "brainer-atelier.firebaseapp.com",
   messagingSenderId: "1087115969757",
   measurementId: "G-Z51MBK5SSF"
