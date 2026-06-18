@@ -1,53 +1,55 @@
-# Brainer Atelier — Bridal Catalogue
+# Brainer Atelier — Bridal Catalogue 💍
 
-A stunning, modern bridal catalogue website designed for **Brainer Atelier**. This project features a beautiful frontend tailored for showcasing ethereal bridal collections, facilitating private consultation bookings, and highlighting the brand's artisanal excellence.
+A stunning, high-performance static web application for a boutique bridal atelier, built with HTML, CSS, and Vanilla JavaScript, integrated with a Firebase backend.
 
-## 🌟 Features
+## Features ✨
 
-- **Dynamic Hero Slider**: An elegant, auto-playing slider with swipe support and progress indicators.
-- **Collection Showcases**: Dedicated sections for distinct bridal collections (Ethereal, Mystique, Romance, and Classic).
-- **Interactive Catalogue Grid**: Filterable gown catalogue with dynamic images and "New/Featured" badges.
-- **Lightbox Image Viewer**: A smooth, responsive lightbox for viewing gown details up close.
-- **Consultation Booking Form**: A built-in inquiry form tailored for wedding dates, gown preferences, and client visions.
-- **AI Chat Assistant Widget**: A floating interactive chat UI pre-loaded with a knowledge base for answering common bridal inquiries (mocked functionality).
-- **Responsive & Premium Design**: Custom CSS tokens, fluid typography, smooth scroll reveals, and elegant hover animations (no external CSS frameworks).
+*   **Ethereal Design**: Custom CSS with glassmorphism, smooth micro-animations, and a responsive grid layout.
+*   **Dynamic Catalogue**: 12 gowns spread across 4 distinct collections (Ethereal, Mystique, Romance, Classic) with filtering capabilities.
+*   **Interactive Lightbox**: Immersive image viewing with keyboard navigation (`Left/Right` arrows) and smooth transitions.
+*   **Smart AI Chatbot**: A fully local, fuzzy-matching intelligent assistant capable of answering questions across 20+ bridal topics and suggesting context-aware follow-ups—all without needing an API key.
+*   **Firebase Integration**: Secure inquiry form that connects directly to a Cloud Firestore database, protected by custom security rules.
+*   **Performance Optimized**: Image lazy loading, CSS animations, and efficient vanilla JS logic.
 
-## 🚀 How to Run Locally
+## Screenshots 📸
 
-Since this is a static website built with HTML, CSS, and Vanilla JavaScript, it is extremely simple to run.
+### The Collections
+![Collections](screenshots/collections.png)
 
-1. **Clone or Download** this repository.
-2. Navigate to the project directory:
-   ```bash
-   cd "brainer atelier catalogue"
-   ```
-3. **Run a local server** (using `npx serve`, Python, or VS Code Live Server):
+### The Catalogue & Filtering
+![Catalogue](screenshots/catalogue.png)
+
+### The AI Bridal Assistant
+![Chatbot](screenshots/chatbot.png)
+
+## Tech Stack 🛠️
+
+*   **Frontend**: HTML5, CSS3, Vanilla JS
+*   **Backend**: Google Firebase (Cloud Firestore)
+*   **Hosting Setup**: Ready for Firebase Hosting
+*   **Design Tokens**: Custom variables for colors (Ivory, Cream, Rose, Charcoal, Gold) and typography.
+
+## Setup & Local Development 💻
+
+1. Clone this repository.
+2. Serve the directory using any local web server. For example, using Node.js:
    ```bash
    npx serve .
    ```
-4. Open the provided localhost link in your browser (usually `http://localhost:3000`).
+3. Open `http://localhost:3000` in your browser.
 
-## 📁 Project Structure
+## Firebase Configuration 🔥
 
-```text
-brainer atelier catalogue/
-│
-├── index.html       # The main single-page layout
-├── assets/
-│   ├── css/
-│   │   └── style.css  # All styles and animations
-│   ├── images/      # Logos, backgrounds, and gown photos
-│   └── js/
-│       └── main.js    # Logic for filters, sliders, lightbox, and chat
-└── README.md
-```
+This project is configured to write inquiries securely to a Cloud Firestore database.
 
-## 🎨 Tech Stack
+To initialize your own Firebase environment:
+1. Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/).
+2. Enable **Firestore Database** in production mode.
+3. Update the `firebaseConfig` object inside `assets/js/main.js` with your project's credentials.
+4. Deploy the included security rules:
+   ```bash
+   firebase deploy --only firestore:rules
+   ```
 
-- **HTML5**: Semantic and accessible markup.
-- **Vanilla CSS3**: Custom properties (variables) for consistent theming and smooth micro-animations.
-- **Vanilla JavaScript**: Lightweight DOM manipulation without heavy frameworks (React/Vue/jQuery).
-
-## 📄 License
-
-All rights reserved by **Markiecadag**. Graphics, logos, and design elements are the property of Brainer Atelier.
+---
+*Bridal couture crafted with intention, artistry, and an unwavering devotion to your most luminous moment. All rights reserved.*
